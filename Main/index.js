@@ -1,20 +1,8 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+const Shapes = require('./lib/shapes');
 
-inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
-  .then((answers) => {
-    // Use user feedback for... whatever!!
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+const shape = new Shapes();
+
+shape.run();
   /**
    * packages - what tools do i need for this
    * -install jest and inquirer
