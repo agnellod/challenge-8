@@ -1,0 +1,10 @@
+const {Circle } = require("./shapes");
+
+describe("Circle", () => {
+  test("should render svg for a green circle element", () => {
+    const expectedSvg = '<circle cx="150" cy="100" r="80" fill="green" />';
+    const circle = new Circle("Cirlce", "Black", "test", );
+    const actualSvg = circle.render();
+    expect(actualSvg).toEqual(expectedSvg);
+  });
+});

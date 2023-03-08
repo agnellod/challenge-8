@@ -1,9 +1,9 @@
 const Shape = require("./shapes");
 
 class Triangle extends Shape {
-    constructor(shape, shapeColor, text, textColor);
-    super(shape, shapeColor, text, textColor);
-
+    constructor(shape, shapeColor, text, textColor){
+    super(shape, shapeColor, text, textColor)
+    }
     render() {
         return `<svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg"/>
         
